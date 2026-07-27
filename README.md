@@ -30,7 +30,13 @@ This is my personal developer  portfolio built during the 14-day Web Development
 - Linked external CSS stylesheet (`style.css`).
 - Applied global reset, CSS variables, Google Fonts (`Poppins`), and a modern dark theme.
 - Designed sticky Navigation bar and stylized buttons with hover states.
-- Styled Skills list and Contact Form components with sleek card inputs.
+- Styled Skills list and Contact Form components with sleek card inputs.  
+
+### 🔹 Day 5: Advanced CSS Layouts & Card Styling
+- Applied **Flexbox** for aligned header navigation, hero banner, and skill items.
+- Implemented **CSS Grid** for responsive project cards in the Portfolio section.
+- Designed interactive hover effects (`transform: translateY`) and smooth transitions for cards and buttons.
+- Styled forms with focused border states and soft card shadows (`box-shadow`).
 
 ## 💻 Author
 
