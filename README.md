@@ -36,7 +36,13 @@ This is my personal developer  portfolio built during the 14-day Web Development
 - Applied **Flexbox** for aligned header navigation, hero banner, and skill items.
 - Implemented **CSS Grid** for responsive project cards in the Portfolio section.
 - Designed interactive hover effects (`transform: translateY`) and smooth transitions for cards and buttons.
-- Styled forms with focused border states and soft card shadows (`box-shadow`).
+- Styled forms with focused border states and soft card shadows (`box-shadow`).  
+
+### 🔹 Day 6: Responsive Web Design & Media Queries
+- Added CSS Media Queries (`@media`) targeting mobile and tablet devices (768px and 480px breakpoints).
+- Re-architected layout structure to stack vertically on mobile screens for improved readability.
+- Made hero typography, buttons, and contact forms fully adaptive to smaller viewports.
+- Tested responsiveness across various mobile device dimensions.
 
 ## 💻 Author
 
