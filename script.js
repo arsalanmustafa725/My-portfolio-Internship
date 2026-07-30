@@ -1,4 +1,3 @@
-
 // Wait for DOM content to load
 document.addEventListener('DOMContentLoaded', () => {
 
@@ -29,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 });
 
                 // Mobile screen par menu auto-close karne ke liye
-                if (navLinks.classList.contains('nav-active')) {
+                if (navLinks && navLinks.classList.contains('nav-active')) {
                     navLinks.classList.remove('nav-active');
                 }
             }
@@ -58,6 +57,39 @@ document.addEventListener('DOMContentLoaded', () => {
             
             // Form clear kar dein
             contactForm.reset();
+        });
+    }
+
+    // 4. Dark/Light Theme Toggle with LocalStorage
+    const themeToggleBtn = document.getElementById('theme-toggle');
+    const themeIcon = themeToggleBtn ? themeToggleBtn.querySelector('i') : null;
+    const themeText = themeToggleBtn ? themeToggleBtn.querySelector('.theme-text') : null;
+
+    // Pehle se save shuda theme check karein
+    const currentTheme = localStorage.getItem('theme');
+
+    if (currentTheme === 'light') {
+        document.body.classList.add('light-theme');
+        if (themeIcon) themeIcon.className = 'fas fa-sun';
+        if (themeText) themeText.textContent = 'Light';
+    }
+
+    if (themeToggleBtn) {
+        themeToggleBtn.addEventListener('click', () => {
+            document.body.classList.toggle('light-theme');
+            
+            let theme = 'dark';
+            if (document.body.classList.contains('light-theme')) {
+                theme = 'light';
+                if (themeIcon) themeIcon.className = 'fas fa-sun';
+                if (themeText) themeText.textContent = 'Light';
+            } else {
+                if (themeIcon) themeIcon.className = 'fas fa-moon';
+                if (themeText) themeText.textContent = 'Dark';
+            }
+            
+            // LocalStorage mein save karein
+            localStorage.setItem('theme', theme);
         });
     }
 
