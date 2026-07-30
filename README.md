@@ -42,7 +42,11 @@ This is my personal developer  portfolio built during the 14-day Web Development
 - Added CSS Media Queries (`@media`) targeting mobile and tablet devices (768px and 480px breakpoints).
 - Re-architected layout structure to stack vertically on mobile screens for improved readability.
 - Made hero typography, buttons, and contact forms fully adaptive to smaller viewports.
-- Tested responsiveness across various mobile device dimensions.
+- Tested responsiveness across various mobile device dimensions.  
+
+git add .
+git commit -m "Day 7: Added script.js for mobile menu toggle, smooth scroll, and form validation"
+git push origin main
 
 ## 💻 Author
 
