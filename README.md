@@ -44,9 +44,12 @@ This is my personal developer  portfolio built during the 14-day Web Development
 - Made hero typography, buttons, and contact forms fully adaptive to smaller viewports.
 - Tested responsiveness across various mobile device dimensions.  
 
-git add .
-git commit -m "Day 7: Added script.js for mobile menu toggle, smooth scroll, and form validation"
-git push origin main
+### 🔹 Day 8: Dark / Light Mode Toggle Feature
+- Implemented a dynamic Dark and Light theme switcher using CSS Variables.
+- Integrated browser `localStorage` to persist user theme preferences across page reloads.
+- Updated UI controls with FontAwesome sun/moon icons for interactive visual feedback.  
+
+
 
 ## 💻 Author
 
