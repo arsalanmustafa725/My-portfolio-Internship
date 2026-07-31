@@ -35,28 +35,64 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // 3. Contact Form Submission Handling
-    const contactForm = document.querySelector('.contact-form');
+    // 3. Contact Form Handling with Fetch API (AJAX - No Page Refresh)
+    const contactForm = document.getElementById('contact-form');
+    const formStatus = document.getElementById('form-status');
+    const submitBtn = document.getElementById('submit-btn');
 
     if (contactForm) {
-        contactForm.addEventListener('submit', (e) => {
-            e.preventDefault(); // Default page refresh ko rokta hai
+        contactForm.addEventListener('submit', async function (e) {
+            e.preventDefault(); // Page refresh hone se rokta hai
 
-            // Form Fields values
-            const name = contactForm.querySelector('input[type="text"]').value;
-            const email = contactForm.querySelector('input[type="email"]').value;
-            const message = contactForm.querySelector('textarea').value;
-
-            if (name.trim() === '' || email.trim() === '' || message.trim() === '') {
-                alert('Please fill in all fields before submitting.');
-                return;
+            const data = new FormData(contactForm);
+            
+            // Button State Update: Processing Show Karein
+            submitBtn.disabled = true;
+            submitBtn.textContent = 'Sending...';
+            if (formStatus) {
+                formStatus.style.color = 'var(--accent-color)';
+                formStatus.textContent = 'Sending your message...';
             }
 
-            // Success Message
-            alert(`Thank you, ${name}! Your message has been sent successfully.`);
-            
-            // Form clear kar dein
-            contactForm.reset();
+            try {
+                const response = await fetch(contactForm.action, {
+                    method: contactForm.method,
+                    body: data,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                });
+
+                if (response.ok) {
+                    // Success Status
+                    if (formStatus) {
+                        formStatus.style.color = '#22c55e'; // Green Color
+                        formStatus.textContent = 'Thank you! Your message has been sent successfully.';
+                    }
+                    contactForm.reset(); // Form clear karein
+                } else {
+                    // Error Response from Server
+                    const responseData = await response.json();
+                    if (formStatus) {
+                        formStatus.style.color = '#ef4444'; // Red Color
+                        if (responseData.errors) {
+                            formStatus.textContent = responseData.errors.map(error => error.message).join(", ");
+                        } else {
+                            formStatus.textContent = 'Oops! There was a problem submitting your form.';
+                        }
+                    }
+                }
+            } catch (error) {
+                // Network / General Error
+                if (formStatus) {
+                    formStatus.style.color = '#ef4444';
+                    formStatus.textContent = 'Oops! Network error. Please try again later.';
+                }
+            } finally {
+                // Button Reset
+                submitBtn.disabled = false;
+                submitBtn.textContent = 'Send Message';
+            }
         });
     }
 
