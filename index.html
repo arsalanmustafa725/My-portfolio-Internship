@@ -99,12 +99,18 @@
             <div class="container">
                 <h2>Contact Me</h2>
                 <p>Feel free to reach out to me!</p>
-                <form class="contact-form">
-                    <input type="text" placeholder="Your Name" required>
-                    <input type="email" placeholder="Your Email" required>
-                    <textarea placeholder="Your Message" rows="6" required></textarea>
-                    <button type="submit" class="btn">Send Message</button>
+                
+                <!-- Formspree Endpoint URL yahan apna wala dalein -->
+                <form id="contact-form" action="https://formspree.io/f/YOUR_FORMSPREE_ID_HERE" method="POST" class="contact-form">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
+                    <button type="submit" id="submit-btn" class="btn">Send Message</button>
                 </form>
+                
+                <!-- Day 9: Form Status Message Display Area -->
+                <div id="form-status" style="text-align: center; margin-top: 1rem; font-weight: 600;"></div>
+
                 <div class="social-links">
                     <a href="https://www.linkedin.com/in/arsalan-mustafa-83ba30290/" target="_blank"><i class="fab fa-linkedin"></i></a>
                     <a href="https://github.com/arsalanmustafa725" target="_blank"><i class="fab fa-github"></i></a>
