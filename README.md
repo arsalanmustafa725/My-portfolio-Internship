@@ -42,7 +42,22 @@ This is my personal developer  portfolio built during the 14-day Web Development
 - Added CSS Media Queries (`@media`) targeting mobile and tablet devices (768px and 480px breakpoints).
 - Re-architected layout structure to stack vertically on mobile screens for improved readability.
 - Made hero typography, buttons, and contact forms fully adaptive to smaller viewports.
-- Tested responsiveness across various mobile device dimensions.  
+- Tested responsiveness across various mobile device dimensions.    
+
+# 🚀 Day 7: Smooth Scrolling & Navigation Enhancements
+
+On Day 7 of the portfolio development, the main focus was improving the user navigation experience by adding CSS smooth scrolling and active link highlighting logic.
+
+---
+
+## 🎯 Day 7 Objectives Achieved
+
+* **📜 Smooth Scrolling:** Configured native CSS smooth scroll behavior for seamless navigation between sections.
+* **🎯 Active Navigation Highlights:** Added interactive feedback for navigation items when scrolling or clicking section links.
+* **🔝 Scroll-to-Top Navigation:** Enhanced overall site usability and smooth transitions across desktop and mobile views.
+
+
+
 
 ### 🔹 Day 8: Dark / Light Mode Toggle Feature
 - Implemented a dynamic Dark and Light theme switcher using CSS Variables.
