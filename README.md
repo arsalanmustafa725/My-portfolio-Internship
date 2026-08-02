@@ -129,6 +129,20 @@ Today marks the final day of the 10-Day Portfolio Development Series! The focus 
 <meta name="twitter:description" content="Check out my latest web development projects, skills, and get in touch with me!">
 <meta name="twitter:image" content="images/ars2.png">
 
+# 🚀 Day 11: Dynamic Scroll Animations & Typing Effect
+
+On Day 11 of the 14-day web development internship, the portfolio was upgraded with interactive JavaScript animations to enhance the overall visual appeal and user experience (UX).
+
+---
+
+## 🎯 Day 11 Objectives Achieved
+
+* **⌨️ Dynamic Typing Effect:** Implemented a pure JavaScript typing & backspacing animation in the Hero section to cycle through key developer roles.
+* **📜 Scroll Reveal Animations:** Added intersection scroll-reveal triggers so sections (`About`, `Skills`, `Portfolio`, `Contact`) smoothly fade and slide in when scrolled into view.
+* **🔝 Scroll-to-Top Navigation:** Created a floating action button that appears when scrolling down, offering smooth navigation back to the top of the page.
+
+---
+
 
 
 ## 💻 Author
