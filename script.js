@@ -130,3 +130,86 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 });
+
+// ==========================================
+    // DAY 11: DYNAMIC ANIMATIONS & INTERACTIONS
+    // ==========================================
+
+    // 1. Typing Effect in Hero Section
+    const typingElement = document.getElementById('typing-text');
+    if (typingElement) {
+        const words = ["Web Developer", "Front-End Specialist", "Creative Problem Solver"];
+        let wordIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+
+        function typeEffect() {
+            const currentWord = words[wordIndex];
+            
+            if (isDeleting) {
+                typingElement.textContent = currentWord.substring(0, charIndex - 1);
+                charIndex--;
+            } else {
+                typingElement.textContent = currentWord.substring(0, charIndex + 1);
+                charIndex++;
+            }
+
+            let typeSpeed = isDeleting ? 50 : 100;
+
+            if (!isDeleting && charIndex === currentWord.length) {
+                typeSpeed = 1500; // Pause at end of word
+                isDeleting = true;
+            } else if (isDeleting && charIndex === 0) {
+                isDeleting = false;
+                wordIndex = (wordIndex + 1) % words.length;
+                typeSpeed = 500;
+            }
+
+            setTimeout(typeEffect, typeSpeed);
+        }
+
+        typeEffect();
+    }
+
+    // 2. Scroll Reveal Animation for Sections & Cards
+    const revealElements = document.querySelectorAll('.skill-item, .portfolio-item, .about-content, .contact-section');
+    
+    // Initial add reveal class
+    revealElements.forEach(el => el.classList.add('reveal'));
+
+    function checkReveal() {
+        const triggerBottom = window.innerHeight * 0.85;
+
+        revealElements.forEach(el => {
+            const top = el.getBoundingClientRect().top;
+            if (top < triggerBottom) {
+                el.classList.add('active');
+            }
+        });
+    }
+
+    window.addEventListener('scroll', checkReveal);
+    checkReveal(); // Trigger on page load
+
+    // 3. Scroll To Top Button Logic
+    const scrollTopBtn = document.getElementById('scroll-top-btn');
+
+    if (scrollTopBtn) {
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                scrollTopBtn.classList.add('show');
+            } else {
+                scrollTopBtn.classList.remove('show');
+            }
+        });
+
+        scrollTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    }
+
+
+
