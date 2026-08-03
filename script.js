@@ -212,4 +212,85 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 
+// ==========================================
+    // DAY 12: PROJECT FILTERING & MODAL POPUP
+    // ==========================================
 
+    // 1. Project Category Filtering Logic
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const portfolioItems = document.querySelectorAll('.portfolio-item');
+
+    filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            filterBtns.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+
+            const filterValue = btn.getAttribute('data-filter');
+
+            portfolioItems.forEach(item => {
+                const category = item.getAttribute('data-category');
+                if (filterValue === 'all' || category === filterValue) {
+                    item.classList.remove('hide');
+                } else {
+                    item.classList.add('hide');
+                }
+            });
+        });
+    });
+
+    // 2. Project Modal Popup Logic
+    const projectData = {
+        calc: {
+            title: "Project 1: Basic Calculator",
+            desc: "A responsive web-based arithmetic calculator that performs addition, subtraction, multiplication, and division with error handling and keyboard shortcuts support.",
+            tech: ["HTML5", "CSS3", "JavaScript (ES6+)"],
+            link: "https://arsalanmustafa725.github.io/calculator/"
+        },
+        landing: {
+            title: "Project 2: Responsive Landing Page",
+            desc: "A clean, modern responsive layout built using HTML5 semantic structure and advanced CSS Flexbox/Grid techniques.",
+            tech: ["HTML5", "CSS Flexbox", "CSS Grid"],
+            link: "#"
+        }
+    };
+
+    const modal = document.getElementById('project-modal');
+    const modalTitle = document.getElementById('modal-title');
+    const modalDesc = document.getElementById('modal-desc');
+    const modalTech = document.getElementById('modal-tech');
+    const modalLink = document.getElementById('modal-link');
+    const closeModalBtn = document.querySelector('.close-modal');
+
+    document.querySelectorAll('.btn-details').forEach(btn => {
+        btn.addEventListener('click', () => {
+            const projKey = btn.getAttribute('data-project');
+            const data = projectData[projKey];
+
+            if (data) {
+                modalTitle.textContent = data.title;
+                modalDesc.textContent = data.desc;
+                modalLink.href = data.link;
+
+                modalTech.innerHTML = '';
+                data.tech.forEach(t => {
+                    const tag = document.createElement('span');
+                    tag.textContent = t;
+                    modalTech.appendChild(tag);
+                });
+
+                modal.classList.add('show-modal');
+            }
+        });
+    });
+
+    if (closeModalBtn) {
+        closeModalBtn.addEventListener('click', () => {
+            modal.classList.remove('show-modal');
+        });
+    }
+
+    window.addEventListener('click', (e) => {
+        if (e.target === modal) {
+            modal.classList.remove('show-modal');
+        }
+    });
