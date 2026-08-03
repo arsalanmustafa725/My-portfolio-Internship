@@ -141,7 +141,21 @@ On Day 11 of the 14-day web development internship, the portfolio was upgraded w
 * **📜 Scroll Reveal Animations:** Added intersection scroll-reveal triggers so sections (`About`, `Skills`, `Portfolio`, `Contact`) smoothly fade and slide in when scrolled into view.
 * **🔝 Scroll-to-Top Navigation:** Created a floating action button that appears when scrolling down, offering smooth navigation back to the top of the page.
 
+# 🚀 Day 12: Project Filtering & Dynamic Modal Popups
+
+On Day 12 of the 14-day web development internship, the portfolio was upgraded with dynamic category filtering for showcase projects and interactive detail popups (modals).
+
 ---
+
+## 🎯 Day 12 Objectives Achieved
+
+* **🏷️ Interactive Project Category Filtering:** Integrated category tabs (`All`, `JavaScript`, `Web Development`) allowing visitors to filter project cards dynamically using DOM manipulation.
+* **🪟 Interactive Modal Popups:** Implemented a full-screen blurred backdrop modal window that pops up to show comprehensive project details, tech stack badges, and live demo links upon request.
+* **🎨 UI/UX Polish:** Enhanced hover states, button transitions, and added clean responsive layouts for filter buttons.
+
+
+
+
 
 
 
