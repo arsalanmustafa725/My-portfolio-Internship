@@ -153,6 +153,21 @@ On Day 12 of the 14-day web development internship, the portfolio was upgraded w
 * **🪟 Interactive Modal Popups:** Implemented a full-screen blurred backdrop modal window that pops up to show comprehensive project details, tech stack badges, and live demo links upon request.
 * **🎨 UI/UX Polish:** Enhanced hover states, button transitions, and added clean responsive layouts for filter buttons.
 
+# 🚀 Day 13: Performance Optimization, Accessibility (A11y) & Scroll Progress Bar
+
+On Day 13 of the 14-day web development internship, the primary focus was optimizing website performance, improving screen reader and keyboard accessibility, and adding visual progress feedback.
+
+---
+
+## 🎯 Day 13 Objectives Achieved
+
+* **📊 Top Scroll Progress Bar:** Implemented a dynamic header scroll indicator using CSS and JavaScript that fills real-time as the user scrolls down the page.
+* **⚡ Asset Performance Optimization:** Added native `loading="lazy"` attributes to image elements to improve initial page load performance and reduce bandwidth consumption.
+* **♿ Web Accessibility (A11y) Enhancements:** Added explicit `aria-label` tags on icon links and focus outlines (`:focus-visible`) for improved screen reader and keyboard navigation support.
+* **✨ Visual Hover Polish:** Refined hover transitions and card scaling effects across the portfolio interface.
+
+
+
 
 
 
