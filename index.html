@@ -27,6 +27,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
+    <!-- Day 13: Top Scroll Progress Bar -->
+    <div id="scroll-progress"></div>
+
     <header>
         <nav class="navbar">
             <a href="#" class="logo">ARSALAN<span>.</span></a>
@@ -68,7 +71,8 @@
             <div class="container">
                 <h2>About Me</h2>
                 <div class="about-content">
-                    <img src="images/ars2.png" alt="Arsalan Profile Picture" class="profile-pic">
+                    <!-- Day 13: Added lazy loading to profile picture -->
+                    <img src="images/ars2.png" alt="Arsalan Profile Picture" class="profile-pic" loading="lazy">
                     <div class="about-text">
                         <p>Hi, I’m Arsalan — Full‑Stack Web Developer Certified in Advanced Web Development (6‑month intensive) from The Hunar Foundation Institute. I specialize in front‑end technologies and have hands‑on experience delivering dynamic, responsive web projects.</p>
                     </div>
@@ -155,8 +159,8 @@
                 <div id="form-status" style="text-align: center; margin-top: 1rem; font-weight: 600;"></div>
 
                 <div class="social-links">
-                    <a href="https://www.linkedin.com/in/arsalan-mustafa-83ba30290/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://github.com/arsalanmustafa725" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/arsalan-mustafa-83ba30290/" target="_blank" aria-label="LinkedIn Profile"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/arsalanmustafa725" target="_blank" aria-label="GitHub Profile"><i class="fab fa-github"></i></a>
                 </div>
             </div>
         </section>  
@@ -187,8 +191,3 @@
     <script src="script.js"></script>
 </body>
 </html>
-
-
-
-
-  
