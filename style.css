@@ -631,3 +631,33 @@ footer {
     font-size: 0.85rem;
     margin: 5px 5px 5px 0;
 }
+/* ==========================================
+   DAY 13: SCROLL PROGRESS BAR & ACCESSIBILITY
+   ========================================== */
+
+/* Top Scroll Progress Bar */
+#scroll-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #3b82f6, #60a5fa);
+    width: 0%;
+    z-index: 1001;
+    transition: width 0.1s ease-out;
+}
+
+/* Accessibility Focus States for Keyboard Navigation */
+a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible {
+    outline: 2px solid var(--accent-color, #3b82f6);
+    outline-offset: 4px;
+}
+
+/* Image Hover & Performance Polish */
+.profile-pic {
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.profile-pic:hover {
+    transform: scale(1.03);
+}
