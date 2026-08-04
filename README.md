@@ -166,7 +166,78 @@ On Day 13 of the 14-day web development internship, the primary focus was optimi
 * **♿ Web Accessibility (A11y) Enhancements:** Added explicit `aria-label` tags on icon links and focus outlines (`:focus-visible`) for improved screen reader and keyboard navigation support.
 * **✨ Visual Hover Polish:** Refined hover transitions and card scaling effects across the portfolio interface.
 
+# 🚀 14-Day Responsive Web Development Internship Portfolio
 
+Welcome to my **14-Day Web Development Internship Project**! This repository contains a fully responsive, modern, and high-performance Developer Portfolio built step-by-step from scratch using clean HTML5, CSS3, and modern vanilla JavaScript.
+
+---
+
+## 📌 Project Live Demo
+🔗 **Live Portfolio Site:** [https://arsalanmustafa725.github.io/calculator/](https://arsalanmustafa725.github.io/calculator/)
+
+---
+
+## ✨ Features & Highlights
+
+- 🎨 **Light & Dark Theme Toggle:** Custom CSS variables for seamless theme switching with local state saving.
+- 📱 **Fully Responsive Layout:** Optimized across desktop, tablet, and mobile screens using Flexbox & CSS Grid.
+- ⌨️ **Dynamic Typing Animation:** Custom JavaScript typewriter effect in the Hero section.
+- 🔍 **Interactive Project Filtering:** Filter portfolio projects by category (JavaScript, Web Development).
+- 🖼️ **Modal Popup Details:** View full details and live links for projects inside custom JavaScript modals.
+- 📬 **Working Contact Form:** Integrated with Formspree for direct email notifications.
+- 🚀 **SEO & Social Sharing Ready:** Full Open Graph (OG) and Twitter Card meta tags for optimal sharing.
+- ⚡ **Performance Optimized:** Lazy loading applied on assets with smooth scrolling and progress tracking.
+
+---
+
+## 🛠️ Tech Stack & Tools
+
+| Technology | Role / Usage |
+| :--- | :--- |
+| **HTML5** | Semantic structure, SEO meta tags, form layout |
+| **CSS3** | Custom Variables, Flexbox, Grid, Animations, Responsive Media Queries |
+| **JavaScript (ES6+)** | Typing effect, Modal Popups, Theme toggling, Form AJAX submit, Dynamic Filters |
+| **FontAwesome 6** | Iconography |
+| **Formspree** | Backend contact form endpoint |
+| **Git & GitHub Pages** | Version control and live deployment |
+
+---
+
+## 📅 14-Day Learning & Development Journey
+
+<details>
+<summary><b>Click to expand daily task progress</b></summary>
+
+<br>
+
+- **Day 1: Base HTML Structure** — Created primary HTML structure, semantic tags, navbar, hero, about, skills, portfolio, and contact sections.
+- **Day 2: Core Styling & CSS Foundation** — Set up color palette, typography, container wrappers, and resets.
+- **Day 3: Responsive Navigation & Flexbox** — Built a responsive navbar with dynamic desktop links and a mobile hamburger menu layout.
+- **Day 4: CSS Grid Portfolio Gallery** — Styled skills and portfolio cards using CSS Grid layout rules.
+- **Day 5: Contact Form Styling & Inputs** — Custom styling for inputs, textareas, buttons, and social links.
+- **Day 6: Responsive Media Queries** — Added mobile breakpoints (`max-width: 768px`) for mobile optimization.
+- **Day 7: Hamburger Menu Toggle (JavaScript)** — Implemented mobile menu toggle functionality using vanilla JS DOM manipulation.
+- **Day 8: Dark / Light Mode Switch** — Integrated CSS variables root switching along with a header toggle button.
+- **Day 9: Formspree Backend Integration** — Connected contact form to Formspree API with AJAX dynamic submission state handling.
+- **Day 10: SEO Meta Tags & Open Graph** — Added primary meta descriptions, keywords, author details, and social share previews.
+- **Day 11: Micro-interactions & Typing Effect** — Built custom JS typing effect on Hero heading and smooth scroll-to-top button.
+- **Day 12: Interactive Portfolio Filtering & Modals** — Added category filter buttons and popup modal windows for project showcases.
+- **Day 13: Performance Optimization & Polish** — Added scroll progress bar, image lazy loading, and fine-tuned UI transitions.
+- **Day 14: Final Audit, Documentation & Deployment** — Final codebase audit, added completion badges, finalized README.md, and deployed via GitHub Pages.
+
+</details>
+
+---
+
+## 📂 Project Structure
+
+```text
+├── index.html        # Main HTML5 Document
+├── style.css         # Custom CSS Rules & Design System
+├── script.js        # Dynamic UI Interactions & Logic
+├── images/           # Image assets (Profile, Previews, Icons)
+│   └── ars2.png
+└── README.md         # Internship Documentation
 
 
 
