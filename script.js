@@ -129,9 +129,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-});
-
-// ==========================================
+    // ==========================================
     // DAY 11: DYNAMIC ANIMATIONS & INTERACTIONS
     // ==========================================
 
@@ -211,8 +209,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-
-// ==========================================
+    // ==========================================
     // DAY 12: PROJECT FILTERING & MODAL POPUP
     // ==========================================
 
@@ -295,7 +292,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-// ==========================================
+    // ==========================================
     // DAY 13: SCROLL PROGRESS BAR LOGIC
     // ==========================================
     const progressBar = document.getElementById('scroll-progress');
@@ -308,3 +305,5 @@ document.addEventListener('DOMContentLoaded', () => {
             progressBar.style.width = scrolled + '%';
         });
     }
+
+}); // DOMContentLoaded ending bracket correctly placed here
